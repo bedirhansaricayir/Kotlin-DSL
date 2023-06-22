@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "MigrenTakip"
-include ':app'
+include (":app")

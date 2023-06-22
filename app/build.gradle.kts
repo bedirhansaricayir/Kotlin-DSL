@@ -1,19 +1,19 @@
 plugins {
     id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    kotlin("android")
 }
 
 android {
-    namespace = "com.migren.takip"
-    compileSdk = Versions.compileSdk
+    namespace = ConfigData.namespace
+    compileSdk = ConfigData.compileSdk
 
     defaultConfig {
-        applicationId = "com.migren.takip"
-        minSdk = Versions.minSdk
-        targetSdk = Versions.targetSdk
-        versionCode = Versions.versionCode
-        versionName = Versions.versionName
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        applicationId = ConfigData.namespace
+        minSdk = ConfigData.minSdk
+        targetSdk = ConfigData.targetSdk
+        versionCode = ConfigData.versionCode
+        versionName = ConfigData.versionName
+        testInstrumentationRunner = ConfigData.testInstrumentationRunner
 
     }
 
